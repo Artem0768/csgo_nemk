@@ -1,0 +1,310 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  background: #010101;
+  color: #FFFFFF;
+}
+
+p {
+  color: #FFFFFF;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  width: 40px;
+  height: 6px;
+  border: none;
+  background: -webkit-gradient(linear, right top, left top, from(#272B9C), to(#E70BDE));
+  background: linear-gradient(to left, #272B9C, #E70BDE);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 980px) {
+  .news_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+
+  .img_news {
+    width: calc(320px + 480 * ((100vw - 320px) / 1600));
+  }
+
+  .information {
+    padding: 10px 70px 0px 0px;
+    width: calc(400px + 400 * ((100vw - 320px) / 1600));
+  }
+
+  .news_csgo {
+    margin: 0px;
+  }
+
+  .btn_button {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media (min-width: 980px) {
+  .news_csgo {
+    margin-left: 62px;
+  }
+
+  .information {
+    padding: 35px 15px 15px 0px;
+  }
+
+  .btn_button {
+    margin: 40px 0px 0px 0px;
+  }
+}
+@media (max-width: 1050px) {
+  .info_news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .one_news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .two_news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .img_new {
+    height: 450px;
+  }
+}
+.wrapper {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 60px;
+}
+
+.header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_logo {
+  padding: 20px;
+}
+
+.header_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header_item {
+  margin-right: 54px;
+}
+
+.header_link {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header_link:hover, .header_link:focus, .header_link:active {
+  opacity: 0.75;
+}
+
+.personal_office {
+  padding: 0px 20px 0px 0px;
+}
+
+.news_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 114px 0px 164px 43px;
+}
+
+.tournaments {
+  font-family: Days One;
+  font-size: calc(16px + 12 * ((100vw - 320px) / 1600));
+  line-height: 36px;
+}
+
+.information {
+  font-family: Changa;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  color: #F7F7F7;
+}
+
+.data {
+  font-family: Changa;
+  font-size: calc(10px + 6 * ((100vw - 320px) / 1600));
+  line-height: 29px;
+}
+
+.btn_button {
+  width: 168;
+  height: 30.99px;
+  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  color: #fff;
+  background: linear-gradient(102.42deg, rgba(148, 25, 193, 0.23) 0.39%, rgba(125, 34, 186, 0.406325) 23.53%, rgba(41, 46, 192, 0.72) 68.15%, #060B88 92.01%), #0D0B41;
+  border-radius: 6px;
+  background-size: 200%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+}
+
+.btn_button:hover {
+  background-position: right;
+}
+
+.img_news {
+  background: black;
+  border: 3px solid transparent;
+  -o-border-image: linear-gradient(left, #9A18C3 0%, #272B9C 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#9A18C3), to(#272B9C));
+     border-image: linear-gradient(left, #9A18C3 0%, #272B9C 100%);
+  -o-border-image: linear-gradient(to right, #9A18C3 0%, #272B9C 100%);
+     border-image: linear-gradient(to right, #9A18C3 0%, #272B9C 100%);
+  border-image-slice: 1;
+  color: #FFFFFF;
+}
+
+.img_new {
+  max-width: 100%;
+}
+
+.btn_button_news {
+  background: black;
+  border: 1px solid transparent;
+  -o-border-image: linear-gradient(left, #9A18C3 0%, #272B9C 100%);
+     border-image: -webkit-gradient(linear, left top, right top, from(#9A18C3), to(#272B9C));
+     border-image: linear-gradient(left, #9A18C3 0%, #272B9C 100%);
+  -o-border-image: linear-gradient(to right, #9A18C3 0%, #272B9C 100%);
+     border-image: linear-gradient(to right, #9A18C3 0%, #272B9C 100%);
+  border-image-slice: 1;
+  width: 245px;
+  height: 44px;
+  color: #FFFFFF;
+  font-family: Changa;
+  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+  line-height: 33px;
+}
+
+.info_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.one_news {
+  margin: 70px;
+}
+
+.schedule {
+  font-size: calc(14px + 10 * ((100vw - 320px) / 1600));
+  padding: 32px 0px 48px 0px;
+  font-family: Changa;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 210px;
+  background: rgba(3, 0, 27, 0.89);
+}
+
+.two_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 66px;
+}
+
+.three_news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 66px 0px 110px 0px;
+}
+
+.transition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  color: #FFFFFF;
+  margin: 0px 4px 70px 0px;
+  width: 39px;
+  height: 38px;
+  background: #0D0C0D;
+  border: none;
+}
